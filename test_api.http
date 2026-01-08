@@ -1,0 +1,17 @@
+###
+#GET http://127.0.0.1:40477
+
+###
+#POST 127.0.0.1:40477/coordinates
+#Content-Type: application/json
+#
+#{
+#  "latitude": 46.7128,
+#  "longitude": -72.0060,
+#  "name": "New York City"
+#}
+
+###
+GET http://127.0.0.1:40477 /coordinates
+
+###
