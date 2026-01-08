@@ -9,7 +9,7 @@ spec:
   selector:
     app: postgres
   ports:
-  - name: postgres
-    protocol: TCP
-    port: 5432
-    targetPort: postgres
+    - name: postgres
+      protocol: TCP
+      port: 5432
+      targetPort: postgres
