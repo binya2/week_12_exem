@@ -18,7 +18,6 @@ spec:
         image: postgres:15
         ports:
         - containerPort: 5432
-          name: postgres_db
         volumeMounts:
         - name: postgres-storage
           mountPath: /usr/share/nginx/html
