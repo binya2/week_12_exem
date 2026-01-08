@@ -20,7 +20,7 @@ spec:
             - containerPort: 5432
           volumeMounts:
             - name: postgres-storage
-              mountPath: /usr/share/nginx/html
+              mountPath: /var/lib/postgresql/data
           env:
             - name: POSTGRES_DB
               value: "coordinates_db"
@@ -33,6 +33,8 @@ spec:
   volumeClaimTemplates:
     - metadata:
         name: postgres-storage
+        labels:
+          app: postgres
       spec:
         accessModes: [ "ReadWriteOnce" ]
         resources:
